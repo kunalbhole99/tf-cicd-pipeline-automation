@@ -1,0 +1,245 @@
+digraph {
+	compound = "true"
+	newrank = "true"
+	subgraph "root" {
+		"[root] module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar (expand)" [label = "module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_autoscaling_group.asg (expand)" [label = "module.alb_asg_ec2.aws_autoscaling_group.asg", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" [label = "module.alb_asg_ec2.aws_launch_configuration.lc", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" [label = "module.alb_asg_ec2.aws_lb.applications_load_balancer", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_lb_listener.front_end (expand)" [label = "module.alb_asg_ec2.aws_lb_listener.front_end", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_lb_target_group.alb_target_group (expand)" [label = "module.alb_asg_ec2.aws_lb_target_group.alb_target_group", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_s3_bucket.alb_logging (expand)" [label = "module.alb_asg_ec2.aws_s3_bucket.alb_logging", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_s3_bucket_acl.bucket_acl (expand)" [label = "module.alb_asg_ec2.aws_s3_bucket_acl.bucket_acl", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_s3_bucket_ownership_controls.example (expand)" [label = "module.alb_asg_ec2.aws_s3_bucket_ownership_controls.example", shape = "box"]
+		"[root] module.alb_asg_ec2.aws_s3_bucket_policy.alb_bucket_policy (expand)" [label = "module.alb_asg_ec2.aws_s3_bucket_policy.alb_bucket_policy", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_availability_zone.az (expand)" [label = "module.alb_asg_ec2.data.aws_availability_zone.az", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_iam_instance_profile.instance_profile (expand)" [label = "module.alb_asg_ec2.data.aws_iam_instance_profile.instance_profile", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_key_pair.key (expand)" [label = "module.alb_asg_ec2.data.aws_key_pair.key", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_security_groups.alb_sg (expand)" [label = "module.alb_asg_ec2.data.aws_security_groups.alb_sg", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_security_groups.ec2_sg (expand)" [label = "module.alb_asg_ec2.data.aws_security_groups.ec2_sg", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_subnet.public_1 (expand)" [label = "module.alb_asg_ec2.data.aws_subnet.public_1", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_subnet.public_2 (expand)" [label = "module.alb_asg_ec2.data.aws_subnet.public_2", shape = "box"]
+		"[root] module.alb_asg_ec2.data.aws_vpc.vpc_selected (expand)" [label = "module.alb_asg_ec2.data.aws_vpc.vpc_selected", shape = "box"]
+		"[root] module.rds.aws_db_instance.db_instance (expand)" [label = "module.rds.aws_db_instance.db_instance", shape = "box"]
+		"[root] module.rds.aws_db_subnet_group.db_sub_group (expand)" [label = "module.rds.aws_db_subnet_group.db_sub_group", shape = "box"]
+		"[root] module.rds.data.aws_availability_zones.available (expand)" [label = "module.rds.data.aws_availability_zones.available", shape = "box"]
+		"[root] module.rds.data.aws_security_group.rds_sg (expand)" [label = "module.rds.data.aws_security_group.rds_sg", shape = "box"]
+		"[root] module.rds.data.aws_subnets.available_db_subnet (expand)" [label = "module.rds.data.aws_subnets.available_db_subnet", shape = "box"]
+		"[root] module.rds.data.aws_vpc.vpc_available (expand)" [label = "module.rds.data.aws_vpc.vpc_available", shape = "box"]
+		"[root] module.vpc.aws_internet_gateway.myIGW (expand)" [label = "module.vpc.aws_internet_gateway.myIGW", shape = "box"]
+		"[root] module.vpc.aws_route.public_internet_gateway (expand)" [label = "module.vpc.aws_route.public_internet_gateway", shape = "box"]
+		"[root] module.vpc.aws_route_table.database_route_table (expand)" [label = "module.vpc.aws_route_table.database_route_table", shape = "box"]
+		"[root] module.vpc.aws_route_table.public_route_table (expand)" [label = "module.vpc.aws_route_table.public_route_table", shape = "box"]
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_1 (expand)" [label = "module.vpc.aws_route_table_association.database_route_table_association_1", shape = "box"]
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_2 (expand)" [label = "module.vpc.aws_route_table_association.database_route_table_association_2", shape = "box"]
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_1 (expand)" [label = "module.vpc.aws_route_table_association.public_route_table_association_1", shape = "box"]
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_2 (expand)" [label = "module.vpc.aws_route_table_association.public_route_table_association_2", shape = "box"]
+		"[root] module.vpc.aws_security_group.alb_sg (expand)" [label = "module.vpc.aws_security_group.alb_sg", shape = "box"]
+		"[root] module.vpc.aws_security_group.ec2_sg (expand)" [label = "module.vpc.aws_security_group.ec2_sg", shape = "box"]
+		"[root] module.vpc.aws_security_group.rds_sg (expand)" [label = "module.vpc.aws_security_group.rds_sg", shape = "box"]
+		"[root] module.vpc.aws_security_group.sg (expand)" [label = "module.vpc.aws_security_group.sg", shape = "box"]
+		"[root] module.vpc.aws_subnet.database_subnet_1 (expand)" [label = "module.vpc.aws_subnet.database_subnet_1", shape = "box"]
+		"[root] module.vpc.aws_subnet.database_subnet_2 (expand)" [label = "module.vpc.aws_subnet.database_subnet_2", shape = "box"]
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" [label = "module.vpc.aws_subnet.public_subnet_1", shape = "box"]
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" [label = "module.vpc.aws_subnet.public_subnet_2", shape = "box"]
+		"[root] module.vpc.aws_vpc.myVPC (expand)" [label = "module.vpc.aws_vpc.myVPC", shape = "box"]
+		"[root] module.vpc.data.aws_availability_zones.available_1 (expand)" [label = "module.vpc.data.aws_availability_zones.available_1", shape = "box"]
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.aws_lb_listener.front_end (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.data.aws_availability_zone.az (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.access_logs_enable (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.alb_count (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.application (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.bucket_name_for_logs (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.deletion_protection (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.organization (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.prefix_of_logs (expand)"
+		"[root] module.alb_asg_ec2 (close)" -> "[root] module.alb_asg_ec2.var.region_name (expand)"
+		"[root] module.alb_asg_ec2 (expand)" -> "[root] module.vpc (close)"
+		"[root] module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar (expand)" -> "[root] module.alb_asg_ec2.aws_autoscaling_group.asg (expand)"
+		"[root] module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar (expand)" -> "[root] module.alb_asg_ec2.aws_lb_target_group.alb_target_group (expand)"
+		"[root] module.alb_asg_ec2.aws_autoscaling_group.asg (expand)" -> "[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)"
+		"[root] module.alb_asg_ec2.aws_autoscaling_group.asg (expand)" -> "[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)"
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" -> "[root] module.alb_asg_ec2.data.aws_iam_instance_profile.instance_profile (expand)"
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" -> "[root] module.alb_asg_ec2.data.aws_key_pair.key (expand)"
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" -> "[root] module.alb_asg_ec2.data.aws_security_groups.ec2_sg (expand)"
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" -> "[root] module.alb_asg_ec2.var.image_id (expand)"
+		"[root] module.alb_asg_ec2.aws_launch_configuration.lc (expand)" -> "[root] module.alb_asg_ec2.var.volume_size (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.aws_s3_bucket_acl.bucket_acl (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.aws_s3_bucket_policy.alb_bucket_policy (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.data.aws_security_groups.alb_sg (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.data.aws_subnet.public_1 (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.data.aws_subnet.public_2 (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.alb_environment_tag (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.application_load_balancer_name (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.drop_invalid_header_alb (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.enable_cross_zone_load_balancing_nlb (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.internal_or_internet_facing (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.loadBalancer_type (expand)"
+		"[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)" -> "[root] module.alb_asg_ec2.var.timeout_idle_alb (expand)"
+		"[root] module.alb_asg_ec2.aws_lb_listener.front_end (expand)" -> "[root] module.alb_asg_ec2.aws_lb.applications_load_balancer (expand)"
+		"[root] module.alb_asg_ec2.aws_lb_listener.front_end (expand)" -> "[root] module.alb_asg_ec2.aws_lb_target_group.alb_target_group (expand)"
+		"[root] module.alb_asg_ec2.aws_lb_target_group.alb_target_group (expand)" -> "[root] module.alb_asg_ec2.data.aws_vpc.vpc_selected (expand)"
+		"[root] module.alb_asg_ec2.aws_s3_bucket.alb_logging (expand)" -> "[root] module.alb_asg_ec2.var.alb_logging_bucket_name (expand)"
+		"[root] module.alb_asg_ec2.aws_s3_bucket_acl.bucket_acl (expand)" -> "[root] module.alb_asg_ec2.aws_s3_bucket_ownership_controls.example (expand)"
+		"[root] module.alb_asg_ec2.aws_s3_bucket_acl.bucket_acl (expand)" -> "[root] module.alb_asg_ec2.var.bucket_acl_type (expand)"
+		"[root] module.alb_asg_ec2.aws_s3_bucket_ownership_controls.example (expand)" -> "[root] module.alb_asg_ec2.aws_s3_bucket.alb_logging (expand)"
+		"[root] module.alb_asg_ec2.aws_s3_bucket_policy.alb_bucket_policy (expand)" -> "[root] module.alb_asg_ec2.aws_s3_bucket.alb_logging (expand)"
+		"[root] module.alb_asg_ec2.data.aws_availability_zone.az (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_iam_instance_profile.instance_profile (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_key_pair.key (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_security_groups.alb_sg (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_security_groups.ec2_sg (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_subnet.public_1 (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_subnet.public_2 (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.data.aws_vpc.vpc_selected (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.access_logs_enable (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.alb_count (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.alb_environment_tag (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.alb_logging_bucket_name (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.application (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.application_load_balancer_name (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.bucket_acl_type (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.bucket_name_for_logs (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.deletion_protection (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.drop_invalid_header_alb (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.enable_cross_zone_load_balancing_nlb (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.image_id (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.internal_or_internet_facing (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.loadBalancer_type (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.organization (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.prefix_of_logs (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.region_name (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.timeout_idle_alb (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.alb_asg_ec2.var.volume_size (expand)" -> "[root] module.alb_asg_ec2 (expand)"
+		"[root] module.rds (close)" -> "[root] module.rds.data.aws_availability_zones.available (expand)"
+		"[root] module.rds (close)" -> "[root] module.rds.output.rds_address (expand)"
+		"[root] module.rds (close)" -> "[root] module.rds.output.subnet_data (expand)"
+		"[root] module.rds (expand)" -> "[root] module.vpc (close)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.aws_db_subnet_group.db_sub_group (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.data.aws_security_group.rds_sg (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.db_name (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.delete_automated_backup (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.engine_name (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.instance_class (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.multi_az_deployment (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.pass (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.public_access (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.skip_finalSnapshot (expand)"
+		"[root] module.rds.aws_db_instance.db_instance (expand)" -> "[root] module.rds.var.user_name (expand)"
+		"[root] module.rds.aws_db_subnet_group.db_sub_group (expand)" -> "[root] module.rds.data.aws_subnets.available_db_subnet (expand)"
+		"[root] module.rds.data.aws_availability_zones.available (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.data.aws_security_group.rds_sg (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.data.aws_subnets.available_db_subnet (expand)" -> "[root] module.rds.data.aws_vpc.vpc_available (expand)"
+		"[root] module.rds.data.aws_vpc.vpc_available (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.output.rds_address (expand)" -> "[root] module.rds.aws_db_instance.db_instance (expand)"
+		"[root] module.rds.output.subnet_data (expand)" -> "[root] module.rds.data.aws_subnets.available_db_subnet (expand)"
+		"[root] module.rds.var.db_name (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.delete_automated_backup (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.engine_name (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.instance_class (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.multi_az_deployment (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.pass (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.public_access (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.skip_finalSnapshot (expand)" -> "[root] module.rds (expand)"
+		"[root] module.rds.var.user_name (expand)" -> "[root] module.rds (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_route.public_internet_gateway (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_route_table_association.database_route_table_association_1 (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_route_table_association.database_route_table_association_2 (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_route_table_association.public_route_table_association_1 (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_route_table_association.public_route_table_association_2 (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_security_group.alb_sg (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_security_group.ec2_sg (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_security_group.rds_sg (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.aws_security_group.sg (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.output.vpc_id (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.create_igw (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.database_route_table_association_required (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.database_subnets (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.default_security_group_name (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.enable_dhcp_options (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.enable_ipv6 (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.manage_default_route_table (expand)"
+		"[root] module.vpc (close)" -> "[root] module.vpc.var.public_subnet (expand)"
+		"[root] module.vpc.aws_internet_gateway.myIGW (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_internet_gateway.myIGW (expand)" -> "[root] module.vpc.var.igw_tag (expand)"
+		"[root] module.vpc.aws_route.public_internet_gateway (expand)" -> "[root] module.vpc.aws_internet_gateway.myIGW (expand)"
+		"[root] module.vpc.aws_route.public_internet_gateway (expand)" -> "[root] module.vpc.aws_route_table.public_route_table (expand)"
+		"[root] module.vpc.aws_route_table.database_route_table (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_route_table.database_route_table (expand)" -> "[root] module.vpc.var.database_route_table_tag (expand)"
+		"[root] module.vpc.aws_route_table.public_route_table (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_route_table.public_route_table (expand)" -> "[root] module.vpc.var.public_route_table_tag (expand)"
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_1 (expand)" -> "[root] module.vpc.aws_route_table.database_route_table (expand)"
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_1 (expand)" -> "[root] module.vpc.aws_subnet.database_subnet_1 (expand)"
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_2 (expand)" -> "[root] module.vpc.aws_route_table.database_route_table (expand)"
+		"[root] module.vpc.aws_route_table_association.database_route_table_association_2 (expand)" -> "[root] module.vpc.aws_subnet.database_subnet_2 (expand)"
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_1 (expand)" -> "[root] module.vpc.aws_route_table.public_route_table (expand)"
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_1 (expand)" -> "[root] module.vpc.aws_subnet.public_subnet_1 (expand)"
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_2 (expand)" -> "[root] module.vpc.aws_route_table.public_route_table (expand)"
+		"[root] module.vpc.aws_route_table_association.public_route_table_association_2 (expand)" -> "[root] module.vpc.aws_subnet.public_subnet_2 (expand)"
+		"[root] module.vpc.aws_security_group.alb_sg (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_security_group.ec2_sg (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_security_group.rds_sg (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_security_group.sg (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_1 (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_1 (expand)" -> "[root] module.vpc.data.aws_availability_zones.available_1 (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_1 (expand)" -> "[root] module.vpc.var.database_subnet_tag_1 (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_1 (expand)" -> "[root] module.vpc.var.database_subnets_cidr_1 (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_2 (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_2 (expand)" -> "[root] module.vpc.data.aws_availability_zones.available_1 (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_2 (expand)" -> "[root] module.vpc.var.database_subnet_tag_2 (expand)"
+		"[root] module.vpc.aws_subnet.database_subnet_2 (expand)" -> "[root] module.vpc.var.database_subnets_cidr_2 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" -> "[root] module.vpc.data.aws_availability_zones.available_1 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" -> "[root] module.vpc.var.map_public_ip_on_launch (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" -> "[root] module.vpc.var.public_subnet_tag_1 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_1 (expand)" -> "[root] module.vpc.var.public_subnets_cidr_1 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" -> "[root] module.vpc.data.aws_availability_zones.available_1 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" -> "[root] module.vpc.var.map_public_ip_on_launch (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" -> "[root] module.vpc.var.public_subnet_tag_2 (expand)"
+		"[root] module.vpc.aws_subnet.public_subnet_2 (expand)" -> "[root] module.vpc.var.public_subnets_cidr_2 (expand)"
+		"[root] module.vpc.aws_vpc.myVPC (expand)" -> "[root] module.vpc.var.cidr (expand)"
+		"[root] module.vpc.aws_vpc.myVPC (expand)" -> "[root] module.vpc.var.enable_dns_hostnames (expand)"
+		"[root] module.vpc.aws_vpc.myVPC (expand)" -> "[root] module.vpc.var.enable_dns_support (expand)"
+		"[root] module.vpc.aws_vpc.myVPC (expand)" -> "[root] module.vpc.var.vpc_name (expand)"
+		"[root] module.vpc.aws_vpc.myVPC (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.vpc.data.aws_availability_zones.available_1 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.data.aws_availability_zones.available_1 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
+		"[root] module.vpc.output.vpc_id (expand)" -> "[root] module.vpc.aws_vpc.myVPC (expand)"
+		"[root] module.vpc.var.cidr (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.create_igw (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_route_table_association_required (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_route_table_tag (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_subnet_tag_1 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_subnet_tag_2 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_subnets (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_subnets_cidr_1 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.database_subnets_cidr_2 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.default_security_group_name (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.enable_dhcp_options (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.enable_dns_hostnames (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.enable_dns_support (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.enable_ipv6 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.igw_tag (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.manage_default_route_table (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.map_public_ip_on_launch (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_route_table_tag (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_subnet (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_subnet_tag_1 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_subnet_tag_2 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_subnets_cidr_1 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.public_subnets_cidr_2 (expand)" -> "[root] module.vpc (expand)"
+		"[root] module.vpc.var.vpc_name (expand)" -> "[root] module.vpc (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.alb_asg_ec2.aws_autoscaling_attachment.asg_attachment_bar (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.alb_asg_ec2.aws_lb_listener.front_end (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.alb_asg_ec2.data.aws_availability_zone.az (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.rds.aws_db_instance.db_instance (expand)"
+		"[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] module.rds.data.aws_availability_zones.available (expand)"
+		"[root] root" -> "[root] module.alb_asg_ec2 (close)"
+		"[root] root" -> "[root] module.rds (close)"
+		"[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+	}
+}
+
